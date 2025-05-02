@@ -2,47 +2,53 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2025-05-02T02:01:58+02:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://example.org/posts/-create-a-blog-from-obsidian-markdown/</loc>
+    <loc>http://localhost:1313/posts/-create-a-blog-from-obsidian-markdown/</loc>
     <lastmod>2025-05-02T02:01:58+02:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://example.org/posts/</loc>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-05-02T02:01:58+02:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://example.org/tags/tag1/</loc>
+    <loc>http://localhost:1313/tags/tag1/</loc>
     <lastmod>2025-05-02T02:01:58+02:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://example.org/tags/tag2/</loc>
+    <loc>http://localhost:1313/tags/tag2/</loc>
     <lastmod>2025-05-02T02:01:58+02:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://example.org/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-05-02T02:01:58+02:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://example.org/categories/todo/</loc>
+    <loc>http://localhost:1313/categories/todo/</loc>
     <lastmod>2025-05-02T02:01:58+02:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://example.org/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-05-02T02:01:58+02:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://example.org/posts/first-blog-post/</loc>
+    <loc>http://localhost:1313/posts/first-blog-post/</loc>
+    <lastmod>2025-05-01T10:01:58+02:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>http://localhost:1313/tags/typography/</loc>
+    <lastmod>2025-05-01T10:01:58+02:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
   </url>

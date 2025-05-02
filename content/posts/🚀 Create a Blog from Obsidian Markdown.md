@@ -6,7 +6,7 @@ date: 2025-05-02T02:01:58+02:00
 draft: false
 description: "You wanted to know how to create a blog from an obsidian markdown, here we go!"
 tags: [tag1, tag2]
-featured_image: "![Image Description](/images/img1.png)"
+featured_image: "/images/img1.png"
 categories: Todo
 comment : false
 hidden: false

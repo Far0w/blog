@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Voxirelius</title>
-    <link>http://example.org/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Voxirelius</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This is a customized copyright.</copyright>
     <lastBuildDate>Fri, 02 May 2025 02:01:58 +0200</lastBuildDate>
     
-        <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     
     
         <item>
         <title>Create a Blog from Obsidian Markdown</title>
-        <link>http://example.org/posts/-create-a-blog-from-obsidian-markdown/</link>
+        <link>http://localhost:1313/posts/-create-a-blog-from-obsidian-markdown/</link>
         <pubDate>Fri, 02 May 2025 02:01:58 +0200</pubDate>
         
-        <guid>http://example.org/posts/-create-a-blog-from-obsidian-markdown/</guid>
-        <description>Voxirelius http://example.org/posts/-create-a-blog-from-obsidian-markdown/ -&lt;p&gt;&lt;img src=&#34;http://example.org/images/Pasted%20image%2020250502190016.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
+        <guid>http://localhost:1313/posts/-create-a-blog-from-obsidian-markdown/</guid>
+        <description>Voxirelius http://localhost:1313/posts/-create-a-blog-from-obsidian-markdown/ -&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/Pasted%20image%2020250502190016.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;-overview&#34;&gt;📌 Overview&lt;/h2&gt;
 &lt;p&gt;You’ll write posts in &lt;strong&gt;Obsidian&lt;/strong&gt;, transform them into a website using &lt;strong&gt;Hugo&lt;/strong&gt;, manage the site on &lt;strong&gt;GitHub&lt;/strong&gt;, and host it with &lt;strong&gt;Hostinger&lt;/strong&gt;, using a &lt;strong&gt;Python script&lt;/strong&gt; and optional &lt;strong&gt;PowerShell/Bash script&lt;/strong&gt; for automation.&lt;/p&gt;
 &lt;p&gt;Inspired from: &lt;a href=&#34;https://blog.networkchuck.com/posts/my-insane-blog-pipeline/&#34;&gt;https://blog.networkchuck.com/posts/my-insane-blog-pipeline/&lt;/a&gt;&lt;/p&gt;
@@ -239,10 +239,24 @@
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;p&gt;Would you like me to generate a ready-to-use PowerShell or Bash script for your setup?&lt;/p&gt;
-- http://example.org/posts/-create-a-blog-from-obsidian-markdown/ - This is a customized copyright.</description>
+- http://localhost:1313/posts/-create-a-blog-from-obsidian-markdown/ - This is a customized copyright.</description>
         </item>
     
     
+    
+        <item>
+        <title>First blog post</title>
+        <link>http://localhost:1313/posts/first-blog-post/</link>
+        <pubDate>Thu, 01 May 2025 10:01:58 +0200</pubDate>
+        
+        <guid>http://localhost:1313/posts/first-blog-post/</guid>
+        <description>Voxirelius http://localhost:1313/posts/first-blog-post/ -&lt;h1 id=&#34;why-create-a-blog&#34;&gt;Why create a blog?&lt;/h1&gt;
+&lt;p&gt;It&amp;rsquo;s about sharing my problems that maybe two or three people around the world have.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s to cultivate creativity, to inspire&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s about documenting what I do, taking the time to put into words what I&amp;rsquo;m doing, so that I can maybe do something for others.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s also about leaving a trace&lt;/p&gt;
+- http://localhost:1313/posts/first-blog-post/ - This is a customized copyright.</description>
+        </item>
     
     
   </channel>
