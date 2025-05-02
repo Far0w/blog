@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<title></title>
+
+
+
+
+<meta charset="utf-8">
+<meta name="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="G-XXXXXXXXXX">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5, user-scalable=5" name="viewport">
+<meta content="telephone=no" name="format-detection">
+<meta name="description" content="">
+<meta name="renderer" content="webkit">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<meta property="og:url" content="http://localhost:1313/posts/-create-a-blog-from-obsidian-markdown-2024-guide/">
+  <meta property="og:site_name" content="A Hugo Site">
+  <meta property="og:title" content="A Hugo Site">
+  <meta property="og:description" content="📌 Overview You’ll write posts in Obsidian, transform them into a website using Hugo, manage the site on GitHub, and host it with Hostinger, using a Python script and optional PowerShell/Bash script for automation.
+✅ Prerequisites Install Obsidian – https://obsidian.md/
+Install Git – https://git-scm.com/
+Install Go (Golang) – https://go.dev/dl/
+Install Hugo – https://gohugo.io/getting-started/installing/
+Install Python 3
+📂 Step 1: Prepare Obsidian Create a folder post/ in your vault.
+Write each blog post in markdown inside this folder.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+
+
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="A Hugo Site">
+  <meta name="twitter:description" content="📌 Overview You’ll write posts in Obsidian, transform them into a website using Hugo, manage the site on GitHub, and host it with Hostinger, using a Python script and optional PowerShell/Bash script for automation.
+✅ Prerequisites Install Obsidian – https://obsidian.md/
+Install Git – https://git-scm.com/
+Install Go (Golang) – https://go.dev/dl/
+Install Hugo – https://gohugo.io/getting-started/installing/
+Install Python 3
+📂 Step 1: Prepare Obsidian Create a folder post/ in your vault.
+Write each blog post in markdown inside this folder.">
+
+
+
+
+
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-XXXXXXXXXX');
+        }
+      </script>
+
+
+
+
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "abcdefghzd");
+</script>
+
+
+
+  
+
+
+
+
+
+
+      <script src="/js/toc.js"></script>
+    
+    <link type="text/css" rel="stylesheet" href="/vendor/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="/scss/dark-mode.min.cb53f1bee2b8900cb4f082afbf00175d6618f281cf9a2fe8619e3b52d20b5721.css" integrity="sha256-y1PxvuK4kAy08IKvvwAXXWYY8oHPmi/oYZ47UtILVyE=" media="screen">
+
+
+<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Material+Icons">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    	<div id="app"><div class="single-column-drawer-container" id="drawer"
+     v-bind:class="{ 'single-column-drawer-container-active': isDrawerOpen }">
+    <div class="drawer-content">
+        <div class="drawer-menu">
+            
+            
+            
+                
+                
+                
+                    
+                
+                
+                
+                <a class="a-block drawer-menu-item active" href="/posts">
+                    Archive
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/categories">
+                    Categories
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/tags">
+                    Tags
+                </a>
+                
+            
+                
+                
+                
+                
+                
+                <a class="a-block drawer-menu-item false" href="/index.xml">
+                    RSS Feed
+                </a>
+                
+            
+            
+            <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- CATALOG -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#-overview" class="nav--overview">
+									📌 Overview
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#-prerequisites" class="nav--prerequisites">
+									✅ Prerequisites
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#-step-1-prepare-obsidian" class="nav--step-1-prepare-obsidian">
+									📂 Step 1: Prepare Obsidian
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#-step-2-set-up-hugo" class="nav--step-2-set-up-hugo">
+									🌐 Step 2: Set Up Hugo
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#-step-3-sync-obsidian-posts-and-images" class="nav--step-3-sync-obsidian-posts-and-images">
+									🔁 Step 3: Sync Obsidian Posts and Images
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#windows" class="nav-windows">
+									Windows:
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#maclinux" class="nav-maclinux">
+									Mac/Linux:
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#copy-images-with-python" class="nav-copy-images-with-python">
+									Copy images with Python:
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#-step-4-build-and-test-hugo-site" class="nav--step-4-build-and-test-hugo-site">
+									🔧 Step 4: Build and Test Hugo Site
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#-step-5-push-to-github" class="nav--step-5-push-to-github">
+									☁️ Step 5: Push to GitHub
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#-step-6-create-hosting-on-hostinger" class="nav--step-6-create-hosting-on-hostinger">
+									🌍 Step 6: Create Hosting on Hostinger
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#-step-7-deploy-via-github" class="nav--step-7-deploy-via-github">
+									🔗 Step 7: Deploy via GitHub
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#-step-8-enable-auto-deployment" class="nav--step-8-enable-auto-deployment">
+									🔁 Step 8: Enable Auto Deployment
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#-step-9-automate-everything" class="nav--step-9-automate-everything">
+									🧠 Step 9: Automate Everything
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#-summary-workflow" class="nav--summary-workflow">
+									✅ Summary: Workflow
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+            
+        </div>
+    </div>
+</div>
+<transition name="fade">
+    <div id="drawer-mask" v-bind:class="{ 'single-column-drawer-mask': mounted }" v-if="isDrawerOpen" v-on:click="toggleDrawer"></div>
+</transition>
+<nav id="navBar" class="navbar sticky-top navbar-light single-column-nav-container">
+    <div id="navBackground" class="nav-background"></div>
+    <div class="container container-narrow nav-content">
+        <button id="nav_dropdown_btn" class="nav-dropdown-toggle" type="button" v-on:click="toggleDrawer">
+            <i class="material-icons">
+                menu
+            </i>
+        </button>
+        <a id="navTitle" class="navbar-brand" href="http://localhost:1313/">
+            A Hugo Site
+        </a>
+        
+        <button type="button" class="nav-darkmode-toggle" id="darkModeToggleButton2">
+            <i class="material-icons" id="darkModeToggleIcon2">
+                dark_mode
+            </i>
+        </button>
+        
+    </div>
+</nav>
+<div class="single-column-header-container" id="pageHead"
+     v-bind:style="{ transform: 'translateZ(0px) translateY('+.3*scrollY+'px)', opacity: 1-navOpacity }">
+    <a href="http://localhost:1313/">
+        <div class="single-column-header-title">A Hugo Site</div>
+        
+        <div class="single-column-header-subtitle">Themed by Diary.</div>
+        
+
+    </a>
+</div>
+
+            <div id="content">
+                <div id="streamContainer" class="stream-container">
+
+    <div class="post-list-container post-list-container-shadow">
+        <div class="post">
+            
+            
+            
+
+            <div class="post-head-wrapper-text-only"
+                
+            >
+                <div class="post-title">
+                    
+                    
+                    <div class="post-meta">
+                        
+
+                        
+
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post-body-wrapper">
+                
+                <div class="post-body" v-pre>
+                
+                    <h2 id="-overview">📌 Overview</h2>
+<p>You’ll write posts in <strong>Obsidian</strong>, transform them into a website using <strong>Hugo</strong>, manage the site on <strong>GitHub</strong>, and host it with <strong>Hostinger</strong>, using a <strong>Python script</strong> and optional <strong>PowerShell/Bash script</strong> for automation.</p>
+<hr>
+<h2 id="-prerequisites">✅ Prerequisites</h2>
+<ol>
+<li>
+<p><strong>Install Obsidian</strong> – <a href="https://obsidian.md/">https://obsidian.md/</a></p>
+</li>
+<li>
+<p><strong>Install Git</strong> – <a href="https://git-scm.com/">https://git-scm.com/</a></p>
+</li>
+<li>
+<p><strong>Install Go (Golang)</strong> – <a href="https://go.dev/dl/">https://go.dev/dl/</a></p>
+</li>
+<li>
+<p><strong>Install Hugo</strong> – <a href="https://gohugo.io/getting-started/installing/">https://gohugo.io/getting-started/installing/</a></p>
+</li>
+<li>
+<p><strong>Install Python 3</strong></p>
+</li>
+</ol>
+<hr>
+<h2 id="-step-1-prepare-obsidian">📂 Step 1: Prepare Obsidian</h2>
+<ul>
+<li>
+<p>Create a folder <code>post/</code> in your vault.</p>
+</li>
+<li>
+<p>Write each blog post in markdown inside this folder.</p>
+</li>
+<li>
+<p>Use <strong>YAML front matter</strong> at the top of each note:</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>title: &#34;My Blog Title&#34;
+</span></span><span style="display:flex;"><span>date: 2024-05-02
+</span></span><span style="display:flex;"><span>tags: [&#34;blog&#34;, &#34;obsidian&#34;]
+</span></span><span style="display:flex;"><span>---
+</span></span></code></pre></div><hr>
+<h2 id="-step-2-set-up-hugo">🌐 Step 2: Set Up Hugo</h2>
+<ol>
+<li>Open terminal and run:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new site my-blog
+</span></span><span style="display:flex;"><span><span style="color:#658b00">cd</span> my-blog
+</span></span></code></pre></div><ol start="2">
+<li>Initialize Git:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>git config --global user.name <span style="color:#cd5555">&#34;Your Name&#34;</span>
+</span></span><span style="display:flex;"><span>git config --global user.email <span style="color:#cd5555">&#34;you@example.com&#34;</span>
+</span></span></code></pre></div><ol start="3">
+<li>Add a Hugo theme (example: terminal):</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git submodule add https://github.com/panr/hugo-theme-terminal.git themes/terminal
+</span></span></code></pre></div><ol start="4">
+<li>Update <code>config.toml</code> with theme config:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>baseURL = <span style="color:#cd5555">&#34;https://example.com/&#34;</span>
+</span></span><span style="display:flex;"><span>languageCode = <span style="color:#cd5555">&#34;en-us&#34;</span>
+</span></span><span style="display:flex;"><span>title = <span style="color:#cd5555">&#34;My Blog&#34;</span>
+</span></span><span style="display:flex;"><span>theme = <span style="color:#cd5555">&#34;terminal&#34;</span>
+</span></span></code></pre></div><ol start="5">
+<li>Create folder structure:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir -p content/post
+</span></span><span style="display:flex;"><span>mkdir -p static/images
+</span></span></code></pre></div><hr>
+<h2 id="-step-3-sync-obsidian-posts-and-images">🔁 Step 3: Sync Obsidian Posts and Images</h2>
+<h3 id="windows">Windows:</h3>
+<p>Use <code>robocopy</code>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>robocopy <span style="color:#cd5555">&#34;C:\path\to\obsidian\post&#34;</span> <span style="color:#cd5555">&#34;C:\path\to\hugo\content\post&#34;</span> /MIR
+</span></span></code></pre></div><h3 id="maclinux">Mac/Linux:</h3>
+<p>Use <code>rsync</code>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rsync -av --delete ~/path/to/obsidian/post/ ~/path/to/hugo/content/post/
+</span></span></code></pre></div><h3 id="copy-images-with-python">Copy images with Python:</h3>
+<p>Use a script to:</p>
+<ul>
+<li>
+<p>Parse markdown files.</p>
+</li>
+<li>
+<p>Copy image files from Obsidian&rsquo;s <code>attachments</code> to Hugo’s <code>static/images</code>.</p>
+</li>
+<li>
+<p>Adjust markdown links.</p>
+</li>
+</ul>
+<hr>
+<h2 id="-step-4-build-and-test-hugo-site">🔧 Step 4: Build and Test Hugo Site</h2>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo server -t terminal
+</span></span></code></pre></div><p>Open <code>http://localhost:1313</code> to preview.</p>
+<hr>
+<h2 id="-step-5-push-to-github">☁️ Step 5: Push to GitHub</h2>
+<ol>
+<li>
+<p>Create GitHub repo.</p>
+</li>
+<li>
+<p>Add remote:</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote add origin git@github.com:yourusername/my-blog.git
+</span></span></code></pre></div><ol start="3">
+<li>Build site:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo
+</span></span></code></pre></div><ol start="4">
+<li>Push full code:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#cd5555">&#34;Initial commit&#34;</span>
+</span></span><span style="display:flex;"><span>git push -u origin master
+</span></span></code></pre></div><hr>
+<h2 id="-step-6-create-hosting-on-hostinger">🌍 Step 6: Create Hosting on Hostinger</h2>
+<ol>
+<li>
+<p>Add a new website (choose &ldquo;Empty PHP/HTML site&rdquo;).</p>
+</li>
+<li>
+<p>Set custom domain or use temporary domain.</p>
+</li>
+<li>
+<p>(If using custom domain via Cloudflare): Add A record pointing to Hostinger IP.</p>
+</li>
+</ol>
+<hr>
+<h2 id="-step-7-deploy-via-github">🔗 Step 7: Deploy via GitHub</h2>
+<ol>
+<li>
+<p>In Hostinger → Git integration:</p>
+<ul>
+<li>
+<p>Generate SSH key and add it to GitHub.</p>
+</li>
+<li>
+<p>Use repo URL: <code>git@github.com:yourusername/my-blog.git</code></p>
+</li>
+<li>
+<p>Use branch: <code>hostinger</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Push only <code>public/</code> folder to <code>hostinger</code> branch:</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git subtree push --prefix=public origin hostinger
+</span></span></code></pre></div><hr>
+<h2 id="-step-8-enable-auto-deployment">🔁 Step 8: Enable Auto Deployment</h2>
+<ol>
+<li>
+<p>In Hostinger → Enable Webhook.</p>
+</li>
+<li>
+<p>In GitHub → Add Webhook:</p>
+<ul>
+<li>
+<p>Paste the webhook URL from Hostinger.</p>
+</li>
+<li>
+<p>Enable <code>push</code> events.</p>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="-step-9-automate-everything">🧠 Step 9: Automate Everything</h2>
+<p>Create a <strong>PowerShell</strong> or <strong>bash</strong> script to:</p>
+<ul>
+<li>
+<p>Sync markdown files</p>
+</li>
+<li>
+<p>Copy images</p>
+</li>
+<li>
+<p>Rebuild Hugo</p>
+</li>
+<li>
+<p>Commit and push to GitHub</p>
+</li>
+<li>
+<p>Push <code>public/</code> to <code>hostinger</code> branch</p>
+</li>
+</ul>
+<p>Example for PowerShell:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#228b22"># Set your paths</span>
+</span></span><span style="display:flex;"><span><span style="color:#00688b">$obsidian</span> = <span style="color:#cd5555">&#34;C:\path\to\obsidian\post&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#00688b">$hugo</span> = <span style="color:#cd5555">&#34;C:\path\to\hugo\content\post&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#00688b">$imagesScript</span> = <span style="color:#cd5555">&#34;images.py&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#228b22"># Run sync</span>
+</span></span><span style="display:flex;"><span>robocopy <span style="color:#00688b">$obsidian</span> <span style="color:#00688b">$hugo</span> /MIR
+</span></span><span style="display:flex;"><span>python <span style="color:#00688b">$imagesScript</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#228b22"># Build and push</span>
+</span></span><span style="display:flex;"><span>hugo
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#cd5555">&#34;Update&#34;</span>
+</span></span><span style="display:flex;"><span>git push origin master
+</span></span><span style="display:flex;"><span>git subtree push --prefix=public origin hostinger
+</span></span></code></pre></div><hr>
+<h2 id="-summary-workflow">✅ Summary: Workflow</h2>
+<ol>
+<li>
+<p>Write post in Obsidian.</p>
+</li>
+<li>
+<p>Run automation script.</p>
+</li>
+<li>
+<p>Website updates via GitHub and Hostinger.</p>
+</li>
+</ol>
+<hr>
+<p>Would you like me to generate a ready-to-use PowerShell or Bash script for your setup?</p>
+
+                    
+                </div>
+            </div>
+            
+            
+            <nav class="post-pagination">
+
+                
+                <a class="newer-posts" href="/posts/first-blog-post/">
+			Next<br>
+                </a>
+                
+                
+                
+                <a class="older-posts">
+			Previous<br>No older posts.
+                </a>
+                
+            </nav>
+            <div class="post-comment-wrapper">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://giscus.app/client.js"
+        data-repo="username/repo"
+        data-repo-id="**************************"
+        data-category="General"
+        data-category-id="*********************"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+
+            </div>
+        </div>
+    </div>
+
+
+                    </div>
+            </div><div id="sideContainer" class="side-container">
+    
+    <a class="a-block nav-head false" href="http://localhost:1313/">
+    
+        <div class="nav-title">
+            A Hugo Site
+        </div>
+        
+        <div class="nav-subtitle">
+            Themed by Diary.
+        </div>
+        
+    </a>
+
+    <div class="nav-link-list">
+        
+        
+            
+            
+            
+                
+            
+            
+            
+            <a class="a-block nav-link-item active" href="/posts">
+                Archive
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/categories">
+                Categories
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/tags">
+                Tags
+            </a>
+            
+        
+            
+            
+            
+            
+            
+            <a class="a-block nav-link-item false" href="/index.xml">
+                RSS Feed
+            </a>
+            
+        
+    </div>
+
+    
+
+    <div class="nav-footer">
+        
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	This is a customized copyright.
+	
+
+    </div>
+    
+</div><div id="extraContainer" class="extra-container">
+    <div class="toc-wrapper">
+        
+
+        
+        <div class="toc">
+
+
+	<div class="toc-content">
+	
+		
+		
+		
+		<center>- CATALOG -</center>
+		
+		
+		<ul>
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#-overview" class="nav--overview">
+									📌 Overview
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#-prerequisites" class="nav--prerequisites">
+									✅ Prerequisites
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#-step-1-prepare-obsidian" class="nav--step-1-prepare-obsidian">
+									📂 Step 1: Prepare Obsidian
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#-step-2-set-up-hugo" class="nav--step-2-set-up-hugo">
+									🌐 Step 2: Set Up Hugo
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#-step-3-sync-obsidian-posts-and-images" class="nav--step-3-sync-obsidian-posts-and-images">
+									🔁 Step 3: Sync Obsidian Posts and Images
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+							
+								
+									<ul>
+								
+							
+						
+						
+							<li>
+								<a href="#windows" class="nav-windows">
+									Windows:
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#maclinux" class="nav-maclinux">
+									Mac/Linux:
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#copy-images-with-python" class="nav-copy-images-with-python">
+									Copy images with Python:
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+							
+								</ul>
+							
+						
+						
+						
+							<li>
+								<a href="#-step-4-build-and-test-hugo-site" class="nav--step-4-build-and-test-hugo-site">
+									🔧 Step 4: Build and Test Hugo Site
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#-step-5-push-to-github" class="nav--step-5-push-to-github">
+									☁️ Step 5: Push to GitHub
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#-step-6-create-hosting-on-hostinger" class="nav--step-6-create-hosting-on-hostinger">
+									🌍 Step 6: Create Hosting on Hostinger
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#-step-7-deploy-via-github" class="nav--step-7-deploy-via-github">
+									🔗 Step 7: Deploy via GitHub
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#-step-8-enable-auto-deployment" class="nav--step-8-enable-auto-deployment">
+									🔁 Step 8: Enable Auto Deployment
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#-step-9-automate-everything" class="nav--step-9-automate-everything">
+									🧠 Step 9: Automate Everything
+								</a>
+							</li>
+						
+						
+					
+				
+			
+				
+				
+					
+						
+						
+						
+						
+						
+							<li>
+								<a href="#-summary-workflow" class="nav--summary-workflow">
+									✅ Summary: Workflow
+								</a>
+							</li>
+						
+						
+					
+				
+			
+		</ul>
+	</div>
+
+</div>
+        
+    </div>
+    <div class="pagination">
+        <a id="globalBackToTop" class="pagination-action animated-visibility" href="#top"
+            :class="{ invisible: scrollY == 0 }">
+            <i class="material-icons pagination-action-icon">
+                keyboard_arrow_up
+            </i>
+        </a>
+        
+        <a type="button" class="pagination-action" id="darkModeToggleButton">
+            <span class="material-icons pagination-action-icon" id="darkModeToggleIcon">
+                dark_mode
+            </span>
+        </a>
+        
+        
+    </div>
+</div>
+
+<div id="single-column-footer">
+Hugo Theme <a href="https://github.com/amazingrise/hugo-theme-diary">Diary</a> by <a href="https://risehere.net/">Rise</a>
+<br>
+Ported from <a href="https://mak1t0.cc/" target="_blank" rel="noreferrer noopener">Makito</a>'s <a href="https://github.com/SumiMakito/hexo-theme-journal/" target="_blank" rel="noreferrer noopener">Journal.</a> <br>
+<br>
+
+&copy;
+	
+	This is a customized copyright.
+	
+</div>
+            </div>
+    
+    <script src="/js/journal.js"></script></body>
+</html>

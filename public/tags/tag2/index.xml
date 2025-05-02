@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tag2 on Voxirelius</title>
+    <link>http://example.org/tags/tag2/</link>
+    <description>Recent content in Tag2 on Voxirelius</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>This is a customized copyright.</copyright>
+    <lastBuildDate>Fri, 02 May 2025 02:01:58 +0200</lastBuildDate>
+    <atom:link href="http://example.org/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create a Blog from Obsidian Markdown</title>
+      <link>http://example.org/posts/-create-a-blog-from-obsidian-markdown/</link>
+      <pubDate>Fri, 02 May 2025 02:01:58 +0200</pubDate>
+      <guid>http://example.org/posts/-create-a-blog-from-obsidian-markdown/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://example.org/images/Pasted%20image%2020250502190016.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;-overview&#34;&gt;📌 Overview&lt;/h2&gt;&#xA;&lt;p&gt;You’ll write posts in &lt;strong&gt;Obsidian&lt;/strong&gt;, transform them into a website using &lt;strong&gt;Hugo&lt;/strong&gt;, manage the site on &lt;strong&gt;GitHub&lt;/strong&gt;, and host it with &lt;strong&gt;Hostinger&lt;/strong&gt;, using a &lt;strong&gt;Python script&lt;/strong&gt; and optional &lt;strong&gt;PowerShell/Bash script&lt;/strong&gt; for automation.&lt;/p&gt;&#xA;&lt;p&gt;Inspired from: &lt;a href=&#34;https://blog.networkchuck.com/posts/my-insane-blog-pipeline/&#34;&gt;https://blog.networkchuck.com/posts/my-insane-blog-pipeline/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-prerequisites&#34;&gt;✅ Prerequisites&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Install Obsidian&lt;/strong&gt; – &lt;a href=&#34;https://obsidian.md/&#34;&gt;https://obsidian.md/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Install Git&lt;/strong&gt; – &lt;a href=&#34;https://git-scm.com/&#34;&gt;https://git-scm.com/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Install Go (Golang)&lt;/strong&gt; – &lt;a href=&#34;https://go.dev/dl/&#34;&gt;https://go.dev/dl/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Install Hugo&lt;/strong&gt; – &lt;a href=&#34;https://gohugo.io/getting-started/installing/&#34;&gt;https://gohugo.io/getting-started/installing/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Install Python 3&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-step-1-prepare-obsidian&#34;&gt;📂 Step 1: Prepare Obsidian&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Create a folder &lt;code&gt;post/&lt;/code&gt; in your vault.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Write each blog post in markdown inside this folder.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
